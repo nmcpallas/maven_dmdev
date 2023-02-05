@@ -33,7 +33,6 @@
     </dependencyManagement>
 
     <build>
-        <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -77,6 +76,9 @@
                                 <goal>integration-test</goal>
                                 <goal>verify</goal>
                             </goals>
+                            <phase>
+                                verify
+                            </phase>
                         </execution>
                     </executions>
                     <configuration>
@@ -110,7 +112,7 @@
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>0.8.9-SNAPSHOT</version>
+                    <version>0.8.8</version>
                     <executions>
                         <execution>
                             <id>prepare-agent</id>
@@ -123,7 +125,6 @@
                             <goals>
                                 <goal>report</goal>
                             </goals>
-                            <phase>verify</phase>
                         </execution>
                     </executions>
                 </plugin>
@@ -133,6 +134,5 @@
                     <version>3.1.1</version>
                 </plugin>
             </plugins>
-        </pluginManagement>
     </build>
 </project>
