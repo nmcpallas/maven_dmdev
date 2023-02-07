@@ -7,14 +7,12 @@ import org.junit.jupiter.api.Test;
 /**
  * Unit test for simple App.
  */
-public class CommonAppTest
-{
+public class CommonAppTest {
     /**
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void shouldAnswerWithTrue() {
+        assertTrue(true);
     }
 }
